@@ -1,0 +1,25 @@
+{
+  "name": "lokinvas",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/start-dev.mjs",
+    "build": "tsc -b && vite build --configLoader native",
+    "preview": "vite preview --configLoader native --host 127.0.0.1",
+    "test": "node --experimental-strip-types --test tests/model.test.ts tests/references.test.ts tests/selection.test.ts tests/export.test.ts",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "lucide-react": "0.364.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6",
+    "typescript": "5.8.3",
+    "vite": "6.2.6",
+    "@playwright/test": "1.52.0"
+  }
+}
